@@ -1,0 +1,209 @@
+.rating-section {
+  background-color: rgba(66, 66, 93, 1);
+  height: 500px;
+}
+.carousel-root {
+  background-color: rgba(66, 66, 93, 1);
+}
+.rating-content {
+  display: flex;
+  justify-content: center;
+}
+
+.rating-text {
+  margin: 0px 0px 13px 52px;
+}
+
+.rating-text h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.17px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(242, 242, 242, 1);
+  width: 565px;
+  height: 132px;
+  top: 5220px;
+  left: 717px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+#avatar {
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  background-color: rgb(222, 126, 43);
+}
+
+.rating-avatar {
+  display: flex;
+  margin-top: 19px;
+}
+
+.avatar-text {
+  padding: 13px 0px 20px 25px;
+  font-family: 'Sen', sans-serif;
+}
+
+.avatar-text h4 {
+  color: white;
+  font-size: 25.28px;
+  font-weight: 500;
+  line-height: 30.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 16px;
+}
+.avatar-text p {
+  font-size: 19.15px;
+  font-weight: 400;
+  line-height: 23.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(195, 195, 195, 0.707);
+}
+
+.rating-desc {
+  margin-top: 26px;
+  font-family: 'Sen', sans-serif;
+  font-size: 16.85px;
+  font-weight: 500;
+  line-height: 20.27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(195, 195, 195, 0.707);
+  width: 376.08px;
+}
+
+.stars img {
+  margin-left: 6px;
+}
+.stars {
+  margin-top: 33px;
+  display: flex;
+}
+.slick-track {
+  display: flex;
+  align-items: center; /* Центрируем элементы по вертикали */
+  overflow: hidden; /* Скрываем все выходящие элементы */
+}
+body {
+  overflow-x: hidden; /* Полностью отключаем горизонтальную прокрутку */
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%; /* Центрируем стрелки вертикально */
+  transform: translateY(-50%);
+  width: 40px; /* Устанавливаем ширину стрелок */
+  height: 40px; /* Устанавливаем высоту стрелок */
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 75px; /* Отступ слева от rating-content */
+  z-index: 2; /* Стрелка поверх контента */
+}
+
+.slick-next {
+  right: 75px; /* Отступ справа от rating-content */
+  z-index: 2; /* Стрелка поверх контента */
+}
+
+.slider-container {
+  background-color: rgba(66, 66, 93, 1);
+}
+@media (max-width: 480px) {
+  .rating-text h1 {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .rating-wrap {
+  }
+  #avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .slider-container {
+    width: auto;
+    height: 300px;
+  }
+  .rating-section {
+    height: 300px;
+  }
+  .rating-text {
+    padding: 0;
+    margin: 0;
+  }
+  .rating-desc {
+    margin: 0px;
+  }
+  .avatar-text h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
+  .avatar-text p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .avatar-text {
+    padding: 0;
+    padding-left: 6px;
+  }
+
+  .rating-desc {
+    font-size: 14px;
+    line-height: 18px;
+    width: auto;
+    padding-top: 6px;
+  }
+
+  .stars img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rating-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 0 20px;
+    gap: 20px;
+  }
+
+  .rating-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rating-img {
+    margin-bottom: auto;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+}

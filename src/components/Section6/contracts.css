@@ -1,0 +1,119 @@
+.contracts-section {
+  background-color: rgba(66, 66, 93, 1);
+}
+
+.contracts-wrap {
+  display: flex;
+  gap: 43px;
+  align-items: center;
+
+  padding-left: 88px;
+  padding-right: 25px;
+}
+
+.contract-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contract-button {
+  justify-content: center;
+}
+
+.contracts-title h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66.17px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(242, 242, 242, 1);
+  width: 500px;
+  height: 132px;
+  top: 5220px;
+  left: 717px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.contracts-template {
+  display: flex;
+  gap: 45px;
+}
+
+@media (max-width: 1240px) {
+  .contracts-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 19px;
+  }
+  .contracts-title h1 {
+    font-size: 40px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+  .contracts-template {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+  .contract-container {
+    width: 45%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contracts-title h1 {
+    font-size: 35px;
+  }
+  .contracts-template {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .contracts-wrap {
+    padding: 0;
+  }
+  .contract-card {
+    width: 42%;
+    max-width: 260px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .contracts-title h1 {
+    font-size: 20px;
+    line-height: 36px;
+    width: 100%;
+  }
+  .contract-title {
+    font-size: 16px;
+  }
+  .contracts-template {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    overflow: hidden;
+  }
+  .contract-container {
+    width: 50%;
+    padding: 6px;
+  }
+  .contract-card {
+    width: 47%;
+    max-width: 180px;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+}

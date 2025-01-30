@@ -1,0 +1,74 @@
+.card-title {
+  font-family: 'Sen', sans-serif;
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 140.77px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.card-subtitle {
+  font-family: 'Sen', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 10px;
+  font-family: 'Sen', sans-serif;
+  color: rgba(91, 104, 118, 1);
+  text-align: start;
+  width: 368px;
+}
+
+@media (max-width: 690px) {
+  .card-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 75.16px;
+    font-weight: 400;
+    line-height: 73.58px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .card-description {
+    width: auto;
+  }
+}
+@media (max-width: 391px) {
+  .card-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 61.16px;
+    font-weight: 400;
+    line-height: 73.58px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .card-subtitle {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18.82px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .card-description {
+    font-size: 14px;
+    width: 300px;
+    margin-right: 0px;
+  }
+  .card {
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,133 @@
+.training-section {
+  background-color: #fef6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper-over {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.training-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 105px 72px 282px 72px;
+  box-sizing: border-box;
+}
+
+.training-content h1 {
+  font-family: 'Sen', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.13px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.training-content p {
+  font-family: 'Sen', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(91, 104, 118, 1);
+  margin-top: 9px;
+  text-align: start;
+  width: 100%;
+  max-width: 576px;
+}
+
+.training-img {
+  flex: 1;
+  max-width: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (max-width: 1024px) {
+  .training-content {
+    padding: 60px 36px;
+  }
+
+  .training-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .training-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-over {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .training-content {
+    max-width: 50%;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  .training-content h1 {
+    width: 305x;
+    margin-bottom: 30px;
+  }
+  .training-content p {
+    margin: 0;
+  }
+
+  .training-img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-content {
+    padding: 20px 10px;
+  }
+
+  .training-content h1 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 300px;
+  }
+
+  .training-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,66 @@
+.exp-section {
+  height: auto; /* убираем фиксированную высоту */
+  background-color: rgba(66, 66, 93, 1);
+  padding: 5vw 5vw 8vw 5vw; /* делаем отступы адаптивными */
+}
+
+.exp-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.exp1-title {
+  font-size: 4vw; /* уменьшаем шрифт адаптивно */
+  line-height: 1.2;
+  padding-right: 3vw;
+  margin-bottom: 5vw;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Sen' sans-serif;
+  font-weight: 700;
+}
+
+.exp-card img {
+  width: 100%;
+  height: auto; /* сохраняем пропорции */
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 1024px) {
+  .exp-wrap {
+    grid-template-columns: 1fr; /* Одна колонка на планшетах */
+  }
+
+  .exp1-title {
+    font-size: 5vw;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp1-title {
+    font-size: 6vw;
+  }
+
+  .exp-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-wrap {
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 16px;
+  }
+
+  .exp1-title {
+    font-size: 7vw;
+    text-align: left;
+  }
+  .exp-card {
+    row-gap: 10px;
+  }
+}

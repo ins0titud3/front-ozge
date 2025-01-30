@@ -1,0 +1,72 @@
+.advantages {
+  background-color: rgba(255, 252, 255, 1);
+}
+
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+  padding: 185px 72px 120px 72px;
+}
+.advantages-desc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.advantages-header {
+  font-family: 'Sen', sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.17px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 73px;
+}
+@media (max-width: 1260px) {
+  .advantages-content {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .advantages-content {
+    padding-top: 80px;
+  }
+  .advantages-header {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 690px) {
+  .advantages-content {
+    padding-top: 50px;
+  }
+  .advantages-header {
+    font-size: 35px;
+    line-height: 28.88px;
+  }
+}
+@media (max-width: 400px) {
+  .advantages-content {
+    padding: 0px 0px 37px 51px;
+  }
+
+  .advantages-header {
+    font-family: 'Sen', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28.88px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 27px;
+    margin-left: 9px;
+  }
+  .advantages-desc {
+    display: flex; /* Меняем grid на flex */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    text-align: left;
+
+    scroll-snap-type: x mandatory; /* Улучшает UX на телефоне */
+  }
+}

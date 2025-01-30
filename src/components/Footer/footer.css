@@ -1,0 +1,51 @@
+/* Общий стиль для футера */
+.footer {
+  background-color: rgba(66, 66, 93, 1); /* Фон */
+  display: flex;
+  justify-content: center; /* Центрирование содержимого по горизонтали */
+  align-items: center; /* Центрирование содержимого по вертикали */
+  padding-top: 120px;
+  padding-bottom: 67px;
+}
+
+.footer-content {
+  text-align: center; /* Центрирование текста */
+}
+
+/* Логотип */
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px; /* Расстояние между элементами */
+  margin-bottom: 27px; /* Отступ между логотипом и текстом */
+}
+
+.go {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 48px;
+  color: rgba(251, 228, 255, 1); /* Цвет для "GO" */
+}
+
+.surf {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 48px;
+  color: rgba(66, 66, 93, 1); /* Цвет для "SURF" */
+  background-color: rgba(251, 228, 255, 1); /* Фон для "SURF" */
+  padding: 0 10px; /* Отступы для фона */
+  border-radius: 4px; /* Округление краев */
+}
+
+/* Маленькая надпись */
+.footer-copyright {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 1.05px; /* Межбуквенный интервал */
+  color: rgba(255, 255, 255, 1); /* Цвет текста */
+}
