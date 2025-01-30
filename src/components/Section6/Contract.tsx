@@ -8,7 +8,9 @@ interface ContractProps {
 }
 
 const Contract: React.FC<ContractProps> = ({ contractNumber, onSign }) => {
-  const [fontSize, setFontSize] = useState(window.innerWidth <= 480 ? '16px' : '24px')
+  const getInitialFontSize = () => (typeof window !== 'undefined' && window.innerWidth <= 480 ? '16px' : '24px')
+
+  const [fontSize, setFontSize] = useState<string>(getInitialFontSize)
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,17 +22,17 @@ const Contract: React.FC<ContractProps> = ({ contractNumber, onSign }) => {
   }, [])
 
   return (
-    <div className="contract-card" style={styles.contractContainer}>
-      <div className="contract-title">
-        <h2 style={{ ...styles.contractTitle, textAlign: 'center', fontSize: `${fontSize}` }}>
-          Договор № {contractNumber}
-        </h2>
-      </div>
+      <div className="contract-card" style={styles.contractContainer}>
+        <div className="contract-title">
+          <h2 style={{ ...styles.contractTitle, textAlign: 'center', fontSize: fontSize }}>
+            Договор № {contractNumber}
+          </h2>
+        </div>
 
-      <button id="contract-button" style={styles.signButton} onClick={onSign}>
-        Подписать
-      </button>
-    </div>
+        <button id="contract-button" style={styles.signButton} onClick={onSign}>
+          Подписать
+        </button>
+      </div>
   )
 }
 
@@ -39,16 +41,16 @@ const styles = {
     backgroundColor: '#ffffff',
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     padding: '20px',
-    width: '294px', // Фиксированная ширина
+    width: '294px',
     maxHeight: '431px',
     fontFamily: 'Sen, sans-serif',
   },
   contractTitle: {
-    fontSize: '24px', // Размер заголовка по умолчанию
-    fontWeight: 'bold', // Жирный текст
+    fontSize: '24px',
+    fontWeight: 'bold',
     marginTop: '52px',
-    marginBottom: '47px', // Отступ снизу
-    color: '#2d2d2d', // Темный цвет текста
+    marginBottom: '47px',
+    color: '#2d2d2d',
   },
   signButton: {
     fontSize: '27.09px',
@@ -59,7 +61,7 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     transition: 'all 0.3s ease-in-out',
-    alignItem: 'center',
+    alignItems: 'center',
   },
 }
 
