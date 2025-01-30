@@ -5,8 +5,14 @@ import 'slick-carousel/slick/slick.css' // Не забудьте подключ�
 import 'slick-carousel/slick/slick-theme.css'
 import './style.css'
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props
+// Определяем интерфейс для пропсов стрелок
+interface ArrowProps {
+  className?: string
+  style?: React.CSSProperties
+  onClick?: () => void
+}
+
+function SampleNextArrow({ className, style, onClick }: ArrowProps) {
   return (
     <div
       className={className}
@@ -14,16 +20,15 @@ function SampleNextArrow(props) {
         ...style,
         display: 'block',
         background: '',
-        right: '75px', // Отступ от rating-content справа
-        zIndex: 2, // Устанавливаем z-index, чтобы стрелка была поверх контента
+        right: '75px',
+        zIndex: 2,
       }}
       onClick={onClick}
     />
   )
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props
+function SamplePrevArrow({ className, style, onClick }: ArrowProps) {
   return (
     <div
       className={className}
@@ -31,8 +36,8 @@ function SamplePrevArrow(props) {
         ...style,
         display: 'block',
         background: '',
-        left: '75px', // Отступ от rating-content слева
-        zIndex: 2, // Устанавливаем z-index, чтобы стрелка была поверх контента
+        left: '75px',
+        zIndex: 2,
       }}
       onClick={onClick}
     />
