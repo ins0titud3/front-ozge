@@ -1,21 +1,20 @@
 .training-section {
   background-color: #fef6e4;
   display: flex;
-  justify-content: center;
+  justify-content: spa;
   align-items: center;
   width: 100%;
-  padding: 20px;
+
   box-sizing: border-box;
 }
 
 .wrapper-over {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+
   box-sizing: border-box;
 }
 
@@ -54,6 +53,7 @@
 .training-img {
   flex: 1;
   max-width: 50%;
+
   padding: 0;
   display: flex;
   justify-content: center;
@@ -64,12 +64,12 @@
 
 .image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1370px) {
   .training-content {
     padding: 60px 36px;
   }
@@ -129,5 +129,9 @@
   .image {
     width: 100%;
     height: auto;
+  }
+
+  .training-img {
+    padding-top: 60px;
   }
 }

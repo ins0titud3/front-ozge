@@ -22,8 +22,7 @@ const Contract: React.FC<ContractProps> = ({ contractNumber, onSign }) => {
   return (
     <div className="contract-card" style={styles.contractContainer}>
       <div className="contract-title">
-        <h2 style={{ ...styles.contractTitle, fontSize }}>
-          {/* Динамически изменяемый размер шрифта */}
+        <h2 style={{ ...styles.contractTitle, textAlign: 'center', fontSize: `${fontSize}` }}>
           Договор № {contractNumber}
         </h2>
       </div>
@@ -50,7 +49,6 @@ const styles = {
     marginTop: '52px',
     marginBottom: '47px', // Отступ снизу
     color: '#2d2d2d', // Темный цвет текста
-    textAlign: 'center',
   },
   signButton: {
     fontSize: '27.09px',
@@ -81,7 +79,6 @@ const buttonStyles = `
   }
 `
 
-// Вставляем стили в <style> в head
 if (typeof document !== 'undefined') {
   const styleSheet = document.createElement('style')
   styleSheet.type = 'text/css'
